@@ -1433,3 +1433,80 @@ void printDLL__char(DLL__char* dll) {
     }
     printf("\n");
 }
+
+// -------------------------------------------------------------------------------------------->
+// FUNCTION TO PRINT THE CONTENTS OF DLL
+// -------------------------------------------------------------------------------------------->
+/**
+ * @brief Prints the contents of the doubly linked list in reverse order.
+ *
+ * This function prints the contents of the doubly linked list in reverse order.
+ *
+ * @param dll Pointer to the doubly linked list structure.
+ *
+ * @return void
+ */
+
+void printReverseDLL__int(DLL__int* dll) {
+    struct DLLNode__int* current = dll->tail;
+
+    if(current == NULL) {
+        printf("DLL is empty\n");
+        return;
+    }
+
+    printf("DLL Contents: ");
+    while (current != NULL) {
+        printf("%c ", current->data);
+        current = current->prev;
+    }
+    printf("\n");
+}
+
+void printReverseDLL__float(DLL__float* dll) {
+    struct DLLNode__float* current = dll->tail;
+
+    if(current == NULL) {
+        printf("DLL is empty\n");
+        return;
+    }
+
+    printf("DLL Contents: ");
+    while (current != NULL) {
+        printf("%c ", current->data);
+        current = current->prev;
+    }
+    printf("\n");
+}
+
+void printReverseDLL__double(DLL__double* dll) {
+    struct DLLNode__double* current = dll->tail;
+
+    if(current == NULL) {
+        printf("DLL is empty\n");
+        return;
+    }
+
+    printf("DLL Contents: ");
+    while (current != NULL) {
+        printf("%c ", current->data);
+        current = current->prev;
+    }
+    printf("\n");
+}
+
+void printReverseDLL__char(DLL__char* dll) {
+    struct DLLNode__char* current = dll->tail;
+
+    if(current == NULL) {
+        printf("DLL is empty\n");
+        return;
+    }
+
+    printf("DLL Contents: ");
+    while (current != NULL) {
+        printf("%c ", current->data);
+        current = current->prev;
+    }
+    printf("\n");
+}
