@@ -13,7 +13,7 @@
 
 /**
  * @file : dll.h
- * @author : Naeem Abdullah Sadik
+ * @author : Naeem Abdullah Sadik & Shamsia Mahjabin Jim
  * @brief : Header file for the doubly linked list implementation.
  */
 
@@ -82,6 +82,7 @@ DLL_PROTO(double)
 #define updateAt(dll, targetIdx, newData, type) updateAt__##type(dll, targetIdx, newData)
 #define freeDLL(dll, type) freeDLL__##type(dll)
 #define printDLL(dll, type) printDLL__##type(dll)
+#define printReverseDLL(dll, type) printDLL__##type(dll)
 
 //=========================================
 #endif //DLL_DLL_H
